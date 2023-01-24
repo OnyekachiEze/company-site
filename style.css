@@ -1,0 +1,99 @@
+:root {
+  --main-color: gold;
+  --black: #13131a;
+  --bg: #010103;
+  --border: 0.1rem solid rgba(255,255,255,.3);
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    color: white;
+    margin: 0;
+    background: url(/header.jpg)
+  }
+  
+.header {
+    background: var(--bg);
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 1.2rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+}
+
+.navbar a{
+margin: 0 5rem;
+font-size: 1.6rem;
+color:#fff;
+text-decoration: none;
+}
+
+.header .navbar a:hover {
+    color: var(--main-color);
+    border-bottom: 1rem solid var(--main-color);
+    padding-bottom: 1rem;
+    transition: 1s;
+}
+
+
+.header div:hover {
+    color: var(--main-color);
+}
+
+
+
+ .about {
+  margin-top: 4em;
+  background-color: white;
+  color: black;
+  padding-top: 12px;
+ }
+
+.menu .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12px,18em));
+    background-color: white;
+}
+
+.menu .box-container .box {
+    margin-left: 12px;
+}
+
+.menu .box-container .box img {
+    height: 15rem;
+    width: 15rem;
+    margin-left: 22px;
+}
+
+.menu .box-container .box  .price {
+    font-size: 2.5rem;
+}
+.menu .box-container .box  .price span {
+    color: #fff;
+    font-size: 1.5rem;
+   text-decoration: line-through;
+   font-weight: lighter;
+}
+.menu .box-container .box .btn {
+  color: white;
+  background-color: black;
+  padding: 10px;
+  position: relative;
+  top: 5px;
+}
+.button {
+    border: none;
+    color: white;
+    margin-top: 18px;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    text-align: center;
+  }
