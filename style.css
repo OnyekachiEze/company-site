@@ -1,25 +1,30 @@
 :root {
   --main-color: gold;
   --black: #13131a;
-  --bg: #010103;
+  --bg: #f6cf9a;
   --border: 0.1rem solid rgba(255,255,255,.3);
 }
+
+/* header-color: #f6cf9a */
+/* card-color: #d0bc8f */
+/* text-color: #474454 */
+/* bg-color: #76737c */
+/* footer-color: #c0786a */
 * {
     box-sizing: border-box;
 }
 
 body {
     font-family: Arial;
-    color: white;
+    
     margin: 0;
-    background: url(/header.jpg)
   }
   
 .header {
     background: var(--bg);
     display: flex;
     text-align: center;
-    justify-content: space-between;
+    justify-content:right;
     padding: 1.2rem 7%;
     border-bottom: var(--border);
     position: fixed;
@@ -28,7 +33,7 @@ body {
 }
 
 .navbar a{
-margin: 0 5rem;
+margin: 0 5px;
 font-size: 1.6rem;
 color:#fff;
 text-decoration: none;
@@ -58,17 +63,20 @@ text-decoration: none;
 .menu .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(12px,18em));
-    background-color: white;
+    
 }
 
 .menu .box-container .box {
     margin-left: 12px;
+    background-color: white;
 }
 
+
 .menu .box-container .box img {
-    height: 15rem;
-    width: 15rem;
+    height: 60%;
+    width: 75%;
     margin-left: 22px;
+    border-radius: 5%;
 }
 
 .menu .box-container .box  .price {
